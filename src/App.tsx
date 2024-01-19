@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-function App() {
+import Header from './components/Header';
+import MenuPage from './pages/MenuPage';
+import ItemDetailPage from './pages/ItemDetailPage';
+import store from './redux/store';
+import TopNavMenu from './components/TopNavMenu';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+      <TopNavMenu />
+        {/* Include the Header here if it's global for all pages */}
+        <Routes>
+          <Route path="/" element={<MenuPage />} />
+        </Routes>
+      </Router>
+    </Provider>
   );
-}
+};
 
 export default App;

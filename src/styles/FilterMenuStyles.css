@@ -1,0 +1,54 @@
+.FilterMenuContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 16px; 
+    width: 1024px; 
+    gap: 16px; 
+    flex-shrink: 0;
+    margin: auto;
+  }
+  .FilterMain{
+    padding: 16px;
+  }
+  
+  .SearchIconWrapper {
+    padding: 8px; 
+    height: auto; 
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .StyledInputBase {
+    color: inherit;
+    & .MuiInputBase-input {
+      padding: 8px 8px 8px 0; 
+      padding-left: calc(0.5em + 32px);
+      width: 100%;
+
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .FilterMenuContainer {
+    
+      display: flex;
+      width: auto;
+
+align-items: flex-start;
+    }
+  
+    .SearchIconWrapper {
+      padding: 4px; 
+    }
+  
+    .StyledInputBase {
+      & .MuiInputBase-input {
+        padding: 4px 4px 4px 0; 
+        padding-left: calc(0.5em + 24px);
+      }
+    }
+  }
+  
