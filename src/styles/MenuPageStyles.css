@@ -1,4 +1,4 @@
-/* Mobile Styles (Media Query) */
+
 @media screen and (max-width: 768px) {
     .father-container {
         width: 100% !important;
@@ -27,8 +27,8 @@
 
     .accordion-details {
         min-width: 100% !important;
-        max-width: 80% !important; /* Ajuste o valor máximo de largura conforme necessário */
-        margin: 0 auto; /* Centralize o accordion no meio da tela */
+        max-width: 80% !important; 
+        margin: 0 auto; 
     }
 }
 
@@ -44,7 +44,7 @@
     background: #F0F0F0F0 ;
   }
   
-  /* MainContainerStyles */
+
   .main-container {
     display: flex ;
     width: 600px ;
@@ -54,8 +54,7 @@
     align-items: center ;
     flex-shrink: 0 ;
   }
-  
-  /* Card Styles */
+
   .card {
     display: flex ;
     flex-direction: row ;
@@ -64,26 +63,17 @@
     background-color: transparent ;
   }
   
-  .card-content {
-    /* Add specific styles if needed with !important */
-  }
   
   .card-media {
     width: 151px ;
   }
-  
-  /* Accordion Styles */
+
   .accordion {
     box-shadow: none ;
   }
   
-  .accordion-summary {
-    /* Add specific styles if needed with !important */
-  }
+
   
   .accordion-details {
     min-width: 600px ;
   }
-  
-  /* Add any other custom styles you need here with !important */
-  
